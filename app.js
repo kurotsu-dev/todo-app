@@ -11,3 +11,9 @@ function addTask() {
 
   input.value = "";
 }
+
+document.getElementById("taskInput").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
